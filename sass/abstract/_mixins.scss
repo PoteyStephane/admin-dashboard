@@ -1,0 +1,32 @@
+@mixin flexHorizontal($position) {
+  @if ($position == center) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } @else if($position == spaceBetween) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  } @else if($position == spaceAround) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@mixin flexVertical($position) {
+  @if ($position == center) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } @else if($position == spaceBetween) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  } @else if($position == spaceAround) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
